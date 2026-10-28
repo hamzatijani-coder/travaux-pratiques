@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>partie 1</title>
+</head>
+
+<body>
+
+    <H1>Formation en Informatiquer </H1>
+
+    <fieldset>
+        <legend>Partie 1</legend>
+        <ul>
+            <li>Developpement web </li>
+            <li>Reseaux informatique </li>
+            <li>Bases de donnees </li>
+            <li>Algorithme</li>
+        </ul>
+        <ol type="I">
+            <li>Inscription</li>
+            <li>Validation </li>
+            <li>choix de la formation</li>
+            <li>confermation de l'inscription</li>
+        </ol>
+        <dl>
+            <dt>Developpement web</dt>
+            <dd>HTML</dd>
+            <dd>css</dd>
+            <dd>javascript</dd>
+        </dl>
+        <dl>
+            <dt>reseaux informatique</dt>
+            <dd>ethernet</dd>
+            <dd>TCP/IP</dd>
+            <dd>routage</dd>
+        </dl>
+        <dl>
+            <dt>Bases de donnees</dt>
+            <dd>Mysql</dd>
+            <dd>oracle</dd>
+        </dl>
+    </fieldset>
+    <fieldset>
+        <legend>Partie 2 : Formulaire </legend>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Information Personnelle</legend>
+
+                <table border="0">
+                    <tr>
+                        <td><label for="nom">Nom</label></td>
+                        <td align="center">:</td>
+                        <td><input type="text" id="nom" name="nom" required></td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <td><label for="prenom">Prènom</label></td>
+                        <td align="center">:</td>
+                        <td><input type="text" id="prenom" required></td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <td><label for="email">Adress Email</label></td>
+                        <td align="center">:</td>
+                        <td><input type="email" id="email" required></td>
+                    </tr>
+                </table>
+
+
+                <table>
+                    <tr>
+                        <td><label for="password">Mot de pass</label></td>
+                        <td align="center">:</td>
+                        <td><input type="password" id="password" required></td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <td><label for="date">Date de naissance</label></td>
+                        <td align="center">:</td>
+                        <td><input type="date" id="date"></td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <td><label for="age">Age</label></td>
+                        <td align="center">:</td>
+                        <td><input type="number" id="age" min="18" max="60"></td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <td><label for="tel">tèlèphone</label></td>
+                        <td align="center">:</td>
+                        <td><input type="tel" id="tel"></td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <td><label for="">Sexe </label></td>
+                        <td align="center">:</td>
+                        <td><input type="radio" name="sexe" id="homme" value="homme"></td>
+                        <td><label for="homme">Homme</label> <br></td>
+                        <td><input type="radio" name="sexe" id="femme" value="femme"></td>
+                        <td><label for="femme">Femme</label></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Formation</legend>
+                <label for="">Niveau d'etude :</label><br>
+
+                <input type="radio" name="niveau_etu" id="1annee" value="1ere_annee">
+                <label for="1annee">1 ère annèe</label> <br>
+
+                <input type="radio" name="niveau_etu" id="2annee" value="2ere_annee">
+                <label for="2annee">2 ème annèe</label><br>
+
+                <input type="radio" name="niveau_etu" id="3annee" value="3ere_annee">
+                <label for="3annee">3 ème annèe</label><br><br>
+
+                <label for="">filère</label><br>
+                <select required>
+                    <option disabled selected>--choisir un filère--</option>
+                    <option>gènie informatique</option>
+                    <option>rèseaux et tèlècommunication</option>
+                    <option>intelegence artidficielle</option>
+                    <option>cyber sècuriter</option>
+                </select><br><br>
+
+                <label for="reponse"><b>Pourquoi souhaite-vous suivre cette formation ?</b></label> <br>
+                <textarea name="reponse" id="reponse"></textarea> <br> <br>
+
+                <label for="cv">CV</label>
+                <input type="file" name="cv"> <br><br>
+            </fieldset>
+
+
+
+            <fieldset>
+                <legend>Competènce </legend>
+                <label for="">Technologies Maitrisèe :</label><br>
+
+                <input type="checkbox" name="tech" id="html" value="html">
+                <label for="html">html</label> <br>
+
+                <input type="checkbox" name="tech" id="css" value="css">
+                <label for="css">css</label><br>
+
+                <input type="checkbox" name="tech" id="javascript" value="javascript">
+                <label for="javascript">javascript</label><br>
+
+                <input type="checkbox" name="tech" id="python" value="python">
+                <label for="python">python</label><br><br>
+
+
+                <label for="">Domaine :</label><br>
+
+                <input type="checkbox" name="domaine" id="dev_web" value="dev_web">
+                <label for="dev_web">Developpement web</label> <br>
+
+                <input type="checkbox" name="domaine" id="reseaux" value="reseaux">
+                <label for="reseaux">Rèseaux informatique</label><br>
+
+                <input type="checkbox" name="domaine" id="cybersecuriter" value="cybersecuriter">
+                <label for="cybersecuriter">cyber sècuriter</label><br>
+
+                <input type="checkbox" name="domaine" id="ia" value="ia">
+                <label for="ia">Inteligence artificielle</label><br><br>
+            </fieldset>
+            <button type="submit">S'inscrire </button>
+            <button type="reset">Rènitialisation </button>
+
+        </form>
+        </form>
+    </fieldset>
+</body>
+
+</html>
