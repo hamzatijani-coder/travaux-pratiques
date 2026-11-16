@@ -1,0 +1,9 @@
+Questions :
+    1 - Que représente this dans onfocus="mettreEnEvidence(this)" ?
+    
+    2 - que représente this dans la méthode presenter() lorsqu’elle est appelée par inscription.presenter() ?
+
+ Solution
+    1 - représente l'element html sur lequel l’événement se produit,donc c'est élément <input id="prenom"> .
+
+    2 -Dans inscription.presenter(), this désigne l'objet inscription qui appelle la méthode.
